@@ -1,0 +1,21 @@
+.card{
+    
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX3L4FwkMN-MEwysM3EdbM-4QgE5l5KyKk3w&usqp=CAU');
+    background-repeat: no-repeat;
+    box-shadow: 1px 4px 4px grey;
+    width: 450px;
+    height: 150px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.cardName{
+    font-size: large;
+}
+.cardDec{
+    color: green;
+}
+.cardFoot{
+    color: lightcoral;
+}

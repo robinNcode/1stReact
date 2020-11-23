@@ -1,17 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+const author = "MsM Robin";
+var desc = "N/A";
+const date = new Date();
+var day = date.getDate();
+var month = date.getMonth() + 1;
+var year = date.getFullYear();
+
+const headingStyle = {
+  color : "white",
+  backgroundColor : "purple",
+  fontSize : "3rem",
+  textAlign : "center"
+};
+
+/**
+ * Creating a react component
+ */
+function Card(){
+  return <div className="card">
+          <h5 className="cardName">@ Author : {author}</h5>
+          <h5 className="cardDec">@ Description : {desc}</h5>
+          <h5 className="cardFoot">@ Date : {day + "-" + month + "-" + year}</h5>
+        </div>
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div style={{padding : "80px;" }}>
+    <h1 style={headingStyle}>First React App</h1>
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+  </div>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
