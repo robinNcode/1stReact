@@ -11,11 +11,13 @@
 }
 
 .cardName{
-    font-size: large;
+    font-size: 20px;
 }
 .cardDec{
+    font-size: 16px;
     color: green;
 }
 .cardFoot{
+    font-size: 12px;
     color: lightcoral;
 }
